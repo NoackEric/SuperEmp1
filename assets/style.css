@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #3DD7AC;
+    font-size: 9mm;
+}
+p{
+    font-size: 4mm;
+}
+.textDate{
+    display: inline-block;
+}
+footer{
+    padding: 0 20mm 0 25mm;
+}
+#page {
+    height: 29.7cm;
+    width: 21cm;
+    padding: 15mm 20mm 0 25mm;
+    line-height: 2rem;
+    border: 1px solid black;
+    margin-top: 1em;
+}
+
+
+#page article:nth-of-type(2) p{
+    font-size: 3mm;
+    padding-top: 13mm;
+}
+#beraterEmail{
+    width: 39mm;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head h1{
+    color: #3DD7AC;
+    font-size: 6mm;
+}
+.head h3 a{
+    font-size: 4mm;
+}
+.head span{
+    color: #010733;
+}
+.berater{
+    display: flex;
+    flex-direction: column;
+}
+.teilnehmerInfos{
+    display: flex;
+    flex-direction: column;
+}
+.beraterOrt{
+    margin-bottom: 10mm;
+}
+#data{
+    display: flex;
+    justify-content: space-between;
+}
+#text h1{
+    margin-bottom: 15mm ;
+    font-size: 4mm;
+}
+#text h1 input{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 4mm;
+}
+#stempel {
+    height: 30mm;
+    width: 60mm;
+}
+#stempel img{
+    height: 100%;
+    width: 100%;
+}
+
+.footerTxt{
+    line-height: normal;
+    margin-top: 28mm;
+    font-size: 3mm;
+}
+
+#gender{
+    width: 10mm;
+}
+#gender2{
+    width: 10mm;
+}
+#textDateText{
+    width: 38mm;
+}
+#textDateText2{
+    width: 35mm;
+}
+#teilnehmerAdresse, #adresseOrt{
+    font-size: 4mm;
+    border: 1px solid black;
+}
+
+
+@media print {
+    #auswahl {
+        display: none;
+    }
+    #page1>footer {
+        position: fixed;
+        bottom: 0;
+    }
+    #page input{
+        border: none;
+    }
+    #page{
+        border: none;
+    }
+}
