@@ -87,11 +87,12 @@ function kursLeistung(){
 
 var contactsArrOne = [];
 const getContacts = () => new Promise((resolve, reject) => {
-    fetch("https://us-central1-supercode-online.cloudfunctions.net/hubspot/contacts?key=20srk9roccbnw46hetflj5l453ruwsgo").then(response => {
+    fetch("https://us-central1-techfit-6aa7c.cloudfunctions.net/hubspot/contacts?key=20srk9roccbnw46hetflj5l453ruwsgo").then(response => {
         return response.json();
     }).then(json => {
         resolve(json.contacts);
     });
+    console.log("https://us-central1-techfit-6aa7c.cloudfunctions.net/hubspot/contacts?key=20srk9roccbnw46hetflj5l453ruwsgo");
 });
 getContacts().then(contacts => {
     contactsArrOne = contactsArrOne.concat(...contacts)
